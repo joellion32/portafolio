@@ -1,0 +1,180 @@
+
+
+<!--================ Start SPANISH Home Banner Area =================-->
+<section *ngIf="spanish" class="home_banner_area animated fadeIn">
+    <div class="banner_inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="banner_content">
+                        <ngx-typed-js *ngIf="spanish" [strings]="['MI NOMBRE ES JOEL TORIBIO']" backSpeed="10" typeSpeed="10" loop="true">
+                            <h3 class="text-uppercase">Hola</h3>
+                            <h1 class="typing text-uppercase"></h1>
+							<h5 class="text-uppercase">Web Developer</h5>
+                        </ngx-typed-js>
+                        <div class="d-flex align-items-center">
+                            <a class="primary_btn" [routerLink]="[ '/sobre' ]"><span>Sobre Mi</span></a>
+                            <a class="primary_btn tr-bg" download="Curriculum" href="../../../assets/documents/Curriculum Joel.pdf"><span>Descarga mi CV</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home_right_img">
+                        <img class="" src="assets/img/banner/home-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End SPANISH Home Banner Area =================-->
+
+
+
+
+<!--================ Start ENGLISH Home Banner Area =================-->
+<section *ngIf="english" class="home_banner_area animated fadeIn">
+    <div class="banner_inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="banner_content">
+                        <ngx-typed-js *ngIf="english" [strings]="['MY NAME IS JOEL TORIBIO']" backSpeed="10" typeSpeed="10" loop="true">
+                            <h3 class="text-uppercase">hello</h3>
+                            <h1 class="typing text-uppercase"></h1>
+							<h5 class="text-uppercase">Web Developer</h5>
+                        </ngx-typed-js>
+                        <div class="d-flex align-items-center">
+                            <a class="primary_btn" [routerLink]="[ '/sobre' ]"><span>About me</span></a>
+                            <a class="primary_btn tr-bg" download="Curriculum" href="../../../assets/documents/Curriculum Joel.pdf"><span>Download my CV</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home_right_img">
+                        <img class="" src="assets/img/banner/home-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ENGLISH Home Banner Area =================-->
+
+<!--================ Start SPANISH About Us Area =================-->
+<section *ngIf="spanish" id="sobre" class="about_area section_gap animated fadeIn">
+    <div class="container">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-lg-5">
+                <div class="about_img">
+                    <img class="" src="assets/img/about-us.png" alt="">
+                </div>
+            </div>
+
+            <div class="offset-lg-1 col-lg-5">
+                <div class="main_title text-left">
+                    <h2>Bienvenidos  <br>
+                        a mi <br>
+                        portafolio</h2>
+                    <p>
+                       Aquí en encontras toda la informacion sobre mí los proyectos en cuales he 
+                       trabajado y las tecnologias que domino.
+                    </p>
+                    <p style="font-style: italic;">
+                        Gracias por visitarme
+                    </p>
+                    <a download="Curriculum" href="../../../assets/documents/Curriculum Joel.pdf" class="primary_btn"><span>Descarga mi CV</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End SPANISH About Us Area =================-->
+
+
+<!--================ Start ENGLISH About Us Area =================-->
+<section *ngIf="english" id="sobre" class="about_area section_gap animated fadeIn">
+    <div class="container">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-lg-5">
+                <div class="about_img">
+                    <img class="" src="assets/img/about-us.png" alt="">
+                </div>
+            </div>
+
+            <div class="offset-lg-1 col-lg-5">
+                <div class="main_title text-left">
+                    <h2>Welcome   <br>
+                        to my <br>
+                        portfolio</h2>
+                    <p>
+                        Here you will find all the information about me, the projects I have worked on and the technologies I have mastered.
+                    </p>
+                    <p style="font-style: italic;">
+                        Thank you for visiting me
+                    </p>
+                    <a download="Curriculum" class="primary_btn" href="../../../assets/documents/Curriculum Joel.pdf"><span>Download my CV</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ENGLISH About Us Area =================-->
+
+
+<!--================ Start SPANISH Features Area =================-->
+<section *ngIf="spanish" class="features_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="main_title">
+                    <h2>Skills </h2>
+                    <p>
+                        Aqui veras las tecnologias que domino y con las cuales desarollo mis proyectos <br> 
+                        si deseas verlos haz click aqui:<br>  <a [routerLink]="[ '/portafolio' ]" class="genric-btn success circle">Ver portafolio</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_inner">
+            <div *ngFor="let item of technologies" class="col-lg-3 col-md-6">
+                <div class="feature_item">
+                    <img width="63px" height="69px" src="assets/img/technologies/{{item.image}}" alt="">
+                    <h4>{{item.name}}</h4>
+                    <p>{{item.description_es}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End SPANISH Features Area =================-->
+
+
+
+
+<!--================ Start ENGLISH Features Area =================-->
+<section *ngIf="english" class="features_area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="main_title">
+                    <h2>Skills </h2>
+                    <p>
+                        Here you will see the technologies that I master and with which I develop my projects.<br> 
+                        If you want to see them click here:<br>  <a [routerLink]="[ '/portafolio' ]" class="genric-btn success circle">View portfolio</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_inner">
+            <div *ngFor="let item of technologies" class="col-lg-3 col-md-6">
+                <div class="feature_item">
+                    <img width="63px" height="69px" src="assets/img/technologies/{{item.image}}" alt="">
+                    <h4>{{item.name}}</h4>
+                    <p>{{item.description_en}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ENGLISH Features Area =================-->

@@ -1,0 +1,69 @@
+	<!--================ Start Header Area =================-->
+	<header id="header" class="header_area navbar_fixed">
+		<div class="main_menu">
+			<nav  *ngIf="spanish" class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" style="color:black !important;" [routerLink]="[ '/home' ]"><b>PORTAFOLIO</b></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/home">Inicio</a></li>
+							<li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/sobre">Sobre Mi</a></li>
+							<li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/portafolio">Portafolio</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Idioma</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" (click)="Spanish()">Español</a></li>
+									<li class="nav-item"><a class="nav-link" (click)="English()">Ingles</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"  routerLinkActive="active"><a class="nav-link"  routerLink="/contacto">Contactame</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!---NAV ENGLISH-->
+			<nav  *ngIf="english" class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" style="color:black !important;" [routerLink]="[ '/home' ]"><b>PORTFOLIO</b></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a></li>
+							<li class="nav-item"><a class="nav-link"  [routerLink]="[ '/sobre' ]" routerLinkActive="active">About</a></li>
+							<li class="nav-item"><a class="nav-link" [routerLink]="[ '/portafolio' ]" routerLinkActive="active">Portfolio</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Languague</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" (click)="Spanish()">Spanish</a></li>
+									<li class="nav-item"><a class="nav-link" (click)="English()">English</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link"  [routerLink]="[ '/contacto' ]" routerLinkActive="active">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+

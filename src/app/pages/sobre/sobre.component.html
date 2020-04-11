@@ -1,0 +1,103 @@
+
+
+<!--================ Start ESPANISH Banner Area =================-->
+<section *ngIf="spanish" class="banner_area animated fadeIn">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Sobre Mí</h2>
+                <div class="page_link">
+                    <a [routerLink]="[ '/home']">Inicio</a>
+                    <a [routerLink]="[ '/sobre']">Sobre Mí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ESPANISH Banner Area =================-->
+
+
+<!--================ Start ENGLISH Banner Area =================-->
+<section *ngIf="english" class="banner_area animated fadeIn">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>About Me</h2>
+                <div class="page_link">
+                    <a [routerLink]="[ '/home']">Home</a>
+                    <a [routerLink]="[ '/sobre']">About Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ENGLISH Banner Area =================-->
+
+<!--================ Start SPANISH About Us Area =================-->
+<section *ngIf="spanish" class="about_area section_gap mb-5 animated fadeIn">
+    <div class="container">
+        <div class="section-top-border">
+            <h3 class="mb-30 title_color">Mi nombre es Joel Toribio Polanco</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="../../../assets/img/perfil.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-9 mt-sm-20 left-align-p">
+                    <p>
+                        Apasionado por la tecnologia y con ganas de aprender tengo 20 años de edad y 
+                        actualmente estoy estudiando la carrera de Lic. en Informatica, pero eso no detiene 
+                        que cada dia aprenda mas cosas nuevas porque me gusta aprender 
+                        cada dia algo nuevo y eso hace que mi pasíon por el desarrollo de software aumente mas.
+                    </p>
+
+                    <p>Tengo mas de 4 años de experiencia en el área de desarrollo de software y he 
+                        trabajado en empresas como Cervecería Nacional como administrador 
+                        de sistemas entre otros. También me apasiona el desarrollo de 
+                        código abierto (open source), lo que me ha llevado a participar en algunos eventos de desarrollo de software.
+                    </p>
+
+                    <ol class="ordered-list">
+                        <h4 class="mb-20 title_color">Experiencias Laborales</h4>
+                        <li><span>Soporte Tecnico y administrador de sistemas (Cerveceria Nacional Dominicana)</span></li>
+                        <li><span>Desarrollador Web Freelancer (Autonomo)</span></li>
+                    </ol>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End SPANISH About Us Area =================-->
+
+
+<!--================ Start ENGLISH About Us Area =================-->
+<section *ngIf="english" class="about_area section_gap mb-5 animated fadeIn">
+    <div class="container">
+        <div class="section-top-border">
+            <h3 class="mb-30 title_color">My name is Joel Toribio Polanco</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="../../../assets/img/perfil.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-9 mt-sm-20 left-align-p">
+                    <p>Passionate about technology and eager to learn, I am 20 years old and I am currently studying to get a degree in Computer Science, but that does not stop me from learning more new things because I like to learn something new every day and that makes my passion for software development increase more.</p>
+                    <p>
+                    I have more than 4 years of experience in the software development area and have worked in companies such as Cervecería Nacional as a systems administrator, among others.
+                    I am also passionate about open source development, which has led me to participate in some software development events.
+                    </p>
+
+                    <ol class="ordered-list">
+                        <h4 class="mb-20 title_color">Work Experiences</h4>
+                        <li><span>Technical Support and systems administrator (Cervecería Nacional Dominicana)</span></li>
+                        <li><span>Freelancer Web Developer (Freelance)</span></li>
+                    </ol>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ENGLISH About Us Area =================-->
+
+
+

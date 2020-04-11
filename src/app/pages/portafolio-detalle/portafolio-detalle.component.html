@@ -1,0 +1,95 @@
+
+
+	<!--================Start Portfolio Details Area =================-->
+	<section *ngIf="spanish" class="portfolio_details_area section_gap animated fadeIn">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img style="width: 550px; height: 410px; border-radius: 4px 4px;" class="img-fluid" src="../../../assets/img/portfolio/{{portfolio.images[0]}}" alt="">
+                        </div>
+                        <br>
+            
+                        <div class="left_img">
+                           <img *ngFor="let item of portfolio.images" (click)="modal(item)" style="width: 150px; height: 110px; border-radius: 4px; cursor: pointer;" class="img-fluid m-2" src="../../../assets/img/portfolio/{{item}}" alt="">    
+                        </div>
+
+                        <br>
+                        <div *ngIf="portfolio.video" class="left_img">
+                            <h4>Video de demostracion</h4>
+                            <video width="550" height="410" controls>
+                                <source src="../../../assets/videos/{{portfolio.video}}" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>    
+                         </div>
+                        
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-uppercase">{{portfolio.name}}</h4>
+                            <p>
+                                {{portfolio.title}}
+                            </p>
+                            <ul class="list p-2">
+                                <li><span>Calificacion</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i></li>
+                                <li><span>Demo</span>: <a href="{{portfolio.demo}}">{{portfolio.demo}}</a></li>
+                                <li><span>Tecnologias</span>: <span *ngFor="let tecno of portfolio.tecnologies" id="tag" class="badge-pill badge-primary">{{tecno}}</span></li>
+                                <li><span>Descripcion</span>: {{portfolio.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->
+
+
+
+    <!--================Start ENGLISH Portfolio Details Area =================-->
+	<section *ngIf="english" class="portfolio_details_area section_gap animated fadeIn">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_img">
+                            <img style="width: 550px; height: 410px; border-radius: 4px 4px;" class="img-fluid" src="../../../assets/img/portfolio/{{portfolio.images[0]}}" alt="">
+                        </div>
+                        <br>
+            
+                        <div class="left_img">
+                           <img *ngFor="let item of portfolio.images" (click)="modal(item)" style="width: 150px; height: 110px; border-radius: 4px; cursor: pointer;" class="img-fluid m-2" src="../../../assets/img/portfolio/{{item}}" alt="">    
+                        </div>
+
+                        <br>
+                        <div *ngIf="portfolio.video" class="left_img">
+                            <h4>Demonstration video</h4>
+                            <video width="550" height="410" controls>
+                                <source src="../../../assets/videos/{{portfolio.video}}" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>    
+                         </div>
+                        
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-30">
+                            <h4 class="text-uppercase">{{portfolio.name}}</h4>
+                            <p>
+                                {{portfolio.title}}
+                            </p>
+                            <ul class="list p-2">
+                                <li><span>Qualification</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i></li>
+                                <li><span>Demo</span>: <a href="{{portfolio.demo}}">{{portfolio.demo}}</a></li>
+                                <li><span>Technologies</span>: <span *ngFor="let tecno of portfolio.tecnologies" id="tag" class="badge-pill badge-primary">{{tecno}}</span></li>
+                                <li><span>Description</span>: {{portfolio.description}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Portfolio Details Area =================-->

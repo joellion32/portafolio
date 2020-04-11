@@ -1,0 +1,126 @@
+
+
+ <!--================ Start SPANISH Banner Area =================-->
+ <section id="portafolio" *ngIf="spanish" class="banner_area animated fadeIn">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Portafolio</h2>
+                <div class="page_link">
+                    <a [routerLink]="[ '/home']">Inicio</a>
+                    <a [routerLink]="[ '/portafolio']">Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End SPANISH Banner Area =================-->
+
+
+
+
+<!--================ Start ENGLISH Banner Area =================-->
+<section *ngIf="english" class="banner_area animated fadeIn">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Portfolio</h2>
+                <div class="page_link">
+                    <a [routerLink]="[ '/home']">Home</a>
+                    <a [routerLink]="[ '/portafolio']">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End ENGLISH Banner Area =================-->
+
+<!--================Start Portfolio Area =================-->
+<section *ngIf="spanish" class="portfolio_area section_gap_top animated fadeIn" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main_title text-left">
+                    <h2>Todos mis proyectos</h2>
+                    <h4>Aqui encontraras algunos proyectos en cuales he trabajado tanto propios como para clientes</h4>
+                </div>
+            </div>
+        </div>
+        <div class="filters portfolio-filter">
+            <ul>
+                <li class="active" data-filter="*">Todos</li>
+                <li data-filter=".popular">Aplicaciones Webs</li>
+                <li data-filter=".latest">Aplicaciones Moviles</li>
+            </ul>
+        </div>
+
+
+        <div class="filters-content">
+            <div class="row portfolio-grid justify-content-center animated fadeIn">
+                <div *ngFor="let item of portfolio_ES; let i = index" class="col-lg-4 col-md-6 all {{item.class}}">
+                    <div style="cursor: pointer;" class="portfolio_box">
+                        <div class="single_portfolio">
+                            <a (click)="detailsES(i)" class="img-gal">
+                            <img style="width: 100%; height: 300px;" src="assets/img/portfolio/{{item.images[0]}}" alt="">
+                            <div class="overlay"></div>
+                                <div class="icon">
+                                    <h2 style="color:white">Ver proyecto</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="short_info">
+                            <h4><a (click)="detailsES(i)">{{item.name}}</a></h4>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--================Start ENGLISH Portfolio Area =================-->
+<section *ngIf="english" class="portfolio_area section_gap_top animated fadeIn" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main_title text-left">
+                    <h2>All my projects</h2>
+                    <h4>Here you will find some projects I have worked on for both myself and clients.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="filters portfolio-filter">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".popular">Webs Applications</li>
+                <li data-filter=".latest">Mobile apps</li>
+            </ul>
+        </div>
+
+
+        <div class="filters-content">
+            <div class="row portfolio-grid justify-content-center animated fadeIn">
+                <div *ngFor="let item of portfolio_EN; let i = index" class="col-lg-4 col-md-6 all {{item.class}}">
+                    <div style="cursor: pointer;" class="portfolio_box">
+                        <div class="single_portfolio">
+                            <a (click)="detailsEN(i)" class="img-gal">
+                            <img style="width: 100%; height: 300px;" src="assets/img/portfolio/{{item.images[0]}}" alt="">
+                            <div class="overlay"></div>
+                                <div class="icon">
+                                    <h2 style="color:white">View Project</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="short_info">
+                            <h4><a (click)="detailsEN(i)">{{item.name}}</a></h4>
+                            <p>{{item.title}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
