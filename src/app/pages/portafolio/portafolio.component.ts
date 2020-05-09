@@ -50,6 +50,16 @@ portfolio_ES = [
   demo: 'No tiene'
 }, 
 {
+  title: 'Aplicacion Web',
+  name: 'La Buena Nueva RD',
+  description: 'Aplicacion tipo CMS desarrollada para la empresa de software Persoft',
+  tecnologies: ['Laravel 6', 'HTML CSS', 'Javascript', 'Ajax', 'PHP'],
+  images: ['7-1.PNG', '7-2.PNG', '7-3.PNG', '7-4.PNG', '7-5.PNG', '7-6.PNG', '7-8.PNG'],
+  video: '',
+  class: 'popular',
+  demo: 'http://labuenanuevard.com/'
+},
+{
   title: 'Aplicacion Movil',
   name: 'Tu Mundo Noticias',
   description: 'Aplicacion desarrollada para poder obtener el titulo del curso Desarrollo de Aplicaciones con Ionic5',
@@ -115,6 +125,16 @@ portfolio_EN = [
     class: 'popular',
     demo: 'Does not have'
   }, 
+  {
+    title: 'Web Application',
+    name: 'La Buena Nueva RD',
+    description: 'CMS block type application developed for the software development company persoft',
+    tecnologies: ['Laravel 6', 'HTML CSS', 'Javascript', 'Ajax', 'PHP'],
+    images: ['7-1.PNG', '7-2.PNG', '7-3.PNG', '7-4.PNG', '7-5.PNG', '7-6.PNG', '7-8.PNG'],
+    video: '',
+    class: 'popular',
+    demo: 'http://labuenanuevard.com/'
+  },
   {
     title: 'Mobile Application',
     name: 'Your World News',
